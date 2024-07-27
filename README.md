@@ -1,4 +1,4 @@
-# Mi Proyecto
+# Proyecto BLOG
 
 Este proyecto es una aplicación que utiliza Angular para el frontend y NestJS para el backend, con MySQL como base de datos. A continuación, se detalla cómo instalar, configurar y ejecutar el proyecto.
 
