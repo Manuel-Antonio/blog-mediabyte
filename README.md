@@ -13,7 +13,6 @@ Este proyecto es una aplicación que utiliza Angular para el frontend y NestJS p
 1. Clona este repositorio a tu máquina local:
    ```bash
    git clone https://github.com/Manuel-Antonio/blog-mediabyte.git
-   cd tu-repositorio
 
 2. Abre el proyecto en tu Visual Code
 
