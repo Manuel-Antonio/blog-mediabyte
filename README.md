@@ -51,4 +51,4 @@ A continuación, abre la terminal integrada en Visual Studio Code para ejecutar 
       ```bash
       password
 
-3. Listo ya puedes entrar a la app y realizar un CRUD de articulos.
+3. 🎉🎉🎉 Listo ya puedes entrar a la app y realizar un CRUD de articulos.
