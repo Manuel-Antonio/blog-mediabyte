@@ -54,6 +54,6 @@ A continuación, abre la terminal integrada en Visual Studio Code para ejecutar 
 3. 🎉🎉🎉 Listo ya puedes entrar a la app y realizar un CRUD de articulos.
 
 # Codigo extra
-Dejo el link para descargar el archivo que usé para testeo de endpoint en POSTMAN
+Link para descargar el archivo postman_collection.json, para testeo de endpoint:
    ```bash
    https://drive.google.com/file/d/1piUp51ho2YUV-6IzDbi3znrSEdFjLJP4/view?usp=sharing
