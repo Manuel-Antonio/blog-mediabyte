@@ -43,7 +43,7 @@ Ahora preparate para ejecutar el siguiente codigo en tu terminal del Visual Code
    ```bash
    http://localhost/
 
-2. Por defecto ya está creado un usuario, usa estas credenciales o crealas en la pagina de registro:
+2. Por defecto ya está creado un usuario, usa estas credenciales en la pagina de Login o crealas en la pagina de Registro:
    * username:
       ```bash
       admin
