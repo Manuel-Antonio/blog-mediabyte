@@ -1,4 +1,4 @@
-# Proyecto BLOG
+# 👔 Proyecto BLOG
 
 Este proyecto es una aplicación que utiliza Angular para el frontend y NestJS para el backend, con MySQL como base de datos. A continuación, se detalla cómo instalar, configurar y ejecutar el proyecto.
 
@@ -8,7 +8,7 @@ Este proyecto es una aplicación que utiliza Angular para el frontend y NestJS p
 - [Docker Compose](https://docs.docker.com/compose/install/)
 - [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) (opcional, si quieres clonar el repositorio)
 
-## Pasos para clonar e instalar app
+## 🏃‍♂️ Pasos para clonar e instalar app
 
 1. Clona este repositorio a tu máquina local:
    ```bash
@@ -38,7 +38,7 @@ A continuación, abre la terminal integrada en Visual Studio Code para ejecutar 
 - angular_app
 - nestjs_app
 
-## Pasos para usar el proyecto
+## 🖥 Pasos para usar el proyecto
 1. Ejecuta tu docker creado si todavía no lo está. Luego en el navegador pega el link:
    ```bash
    http://localhost/
@@ -52,3 +52,8 @@ A continuación, abre la terminal integrada en Visual Studio Code para ejecutar 
       password
 
 3. 🎉🎉🎉 Listo ya puedes entrar a la app y realizar un CRUD de articulos.
+
+# Codigo extra
+Dejo el link para descargar el archivo que usé para testeo de endpoint en POSTMAN
+   ```bash
+   https://drive.google.com/file/d/1piUp51ho2YUV-6IzDbi3znrSEdFjLJP4/view?usp=sharing
