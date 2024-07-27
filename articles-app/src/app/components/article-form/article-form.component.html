@@ -1,0 +1,112 @@
+<section class="mt-5 max-w-4xl mx-auto px-4">
+  <h1 class="text-2xl font-bold mb-8 text-gray-900 text-center">
+    {{ isEdit ? "Edit Article" : "Create Article" }}
+  </h1>
+
+  <a
+    routerLink="/articles"
+    class="inline-flex items-center px-4 py-2 mb-3 text-zinc-600 font-semibold rounded-lg shadow-md hover:text-white hover:bg-zinc-700 focus:outline-none focus:ring-2 focus:ring-zinc-500 focus:ring-offset-2 transition-all duration-300"
+  >
+    <i class="fas fa-arrow-left mr-2"></i>
+    Back to Articles
+  </a>
+
+  <form
+    [formGroup]="articleForm"
+    (ngSubmit)="onSubmit()"
+    class="p-6 bg-white shadow-md rounded-lg space-y-6"
+  >
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div>
+        <label for="title" class="block text-sm font-medium text-gray-700">
+          <i class="fas fa-heading mr-2"></i> Title:
+        </label>
+        <input
+          id="title"
+          formControlName="title"
+          class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+          type="text"
+          placeholder="Enter article title"
+        />
+      </div>
+
+      <div>
+        <label for="author" class="block text-sm font-medium text-gray-700">
+          <i class="fas fa-user mr-2"></i> Author:
+        </label>
+        <input
+          id="author"
+          formControlName="author"
+          class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+          type="text"
+          placeholder="Enter author name"
+        />
+      </div>
+    </div>
+
+    <div>
+      <label for="content" class="block text-sm font-medium text-gray-700">
+        <i class="fas fa-file-alt mr-2"></i> Content:
+      </label>
+      <textarea
+        id="content"
+        formControlName="content"
+        class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+        rows="6"
+        placeholder="Enter article content"
+      ></textarea>
+    </div>
+
+    <div>
+      <label for="description" class="block text-sm font-medium text-gray-700">
+        <i class="fas fa-align-left mr-2"></i> Description:
+      </label>
+      <textarea
+        id="description"
+        formControlName="description"
+        class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+        rows="4"
+        placeholder="Enter article description (optional)"
+      ></textarea>
+    </div>
+
+    <div>
+      <label for="imageUrl" class="block text-sm font-medium text-gray-700">
+        <i class="fas fa-image mr-2"></i> Image URL:
+      </label>
+      <input
+        id="imageUrl"
+        formControlName="imageUrl"
+        class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+        type="text"
+        placeholder="Enter image URL (optional)"
+      />
+    </div>
+
+    <div *ngIf="articleForm.value.imageUrl" class="mt-4 w-96">
+      <label class="block text-sm font-medium text-gray-700">
+        <i class="fas fa-image mr-2"></i> Image Preview:
+      </label>
+      <img
+        [src]="articleForm.value.imageUrl"
+        alt="Image Preview"
+        class="mt-2 w-full h-auto border border-gray-300 rounded-md shadow-sm object-cover"
+      />
+    </div>
+
+    <div class="flex justify-between items-center space-x-4">
+      <button
+        type="submit"
+        class="inline-block px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition-colors duration-300"
+      >
+        <i class="fas fa-save mr-2"></i> {{ isEdit ? "Update" : "Create" }}
+      </button>
+      <a
+        routerLink="/articles"
+        class="inline-block px-6 py-3 text-indigo-600 hover:text-indigo-800 font-semibold rounded-lg transition-colors duration-300"
+      >
+        <i class="fas fa-times mr-2"></i> Cancel
+      </a>
+    </div>
+  </form>
+</section>

@@ -1,0 +1,45 @@
+<div class="p-6 bg-gray-50 min-h-screen flex items-center justify-center">
+  <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+    <div class="relative">
+      <img
+        [src]="article.imageUrl"
+        alt="Article Image"
+        class="w-full h-64 object-cover"
+      />
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+      <div
+        class="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4"
+      >
+        <h1 class="text-3xl font-bold">{{ article.title }}</h1>
+        <p class="mt-2 text-lg">{{ article.createdAt | date : "longDate" }}</p>
+      </div>
+    </div>
+
+    <div class="p-6">
+      <p class="text-lg text-gray-800 mb-4">{{ article.content }}</p>
+      <p class="text-sm text-gray-600 mb-4">
+        <strong>Author:</strong> {{ article.author }}
+      </p>
+      <p class="text-sm text-gray-600 mb-4" *ngIf="article.description">
+        <strong>Description:</strong> {{ article.description }}
+      </p>
+    </div>
+
+    <div class="p-6 flex justify-between space-x-4">
+      <a
+        routerLink="/articles"
+        class="inline-flex items-center px-4 py-2 text-zinc-600 font-semibold rounded-lg shadow-md hover:text-white hover:bg-zinc-700 focus:outline-none focus:ring-2 focus:ring-zinc-500 focus:ring-offset-2 transition-all duration-300"
+      >
+        <i class="fas fa-arrow-left mr-2"></i>
+        Back to Articles
+      </a>
+      <a
+        routerLink="/articles/edit/{{ article.id }}"
+        class="inline-flex items-center px-4 py-2 bg-indigo-600 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition-colors duration-300"
+      >
+        <i class="fas fa-edit mr-2"></i>
+        Edit Article
+      </a>
+    </div>
+  </div>
+</div>
