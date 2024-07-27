@@ -27,7 +27,7 @@ Visualizaras los archivos:
 
 3. Ejecutar comando en terminal
 
-A continuación, abre la terminal integrada en Visual Studio Code para ejecutar el siguiente comando. Puedes abrir la terminal utilizando el atajo de teclado Ctrl + ñ en Windows o Ctrl + ~ en macOS. Una vez abierta, ingresa el comando para construir y levantar los contenedores Docker.
+A continuación, abre la terminal integrada en Visual Studio Code para ejecutar el siguiente comando. Puedes abrir la terminal utilizando el atajo de teclado "Ctrl + ñ" en Windows o "Ctrl + ~" en macOS. Una vez abierta, ingresa el comando para construir y levantar los contenedores Docker.
 
 * La instalacion dura 5 min aprox. depende del internet.
    ```bash
